@@ -1,0 +1,99 @@
+@import "@fontsource/archivo-black";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/space-mono/400.css";
+@import "@fontsource/space-mono/700.css";
+
+:root {
+  /* palette — from docs/DESIGN.md §1 */
+  --nb-yellow: #FFE94A;   /* frame, highlights, primary CTA */
+  --nb-pink:   #FF6B9E;   /* over-forecast / risk / alerts */
+  --nb-blue:   #4D7CFE;   /* forecast series */
+  --nb-green:  #00C48C;   /* good / firm wind / under control */
+  --nb-ink:    #111111;   /* borders, text, actuals */
+
+  /* surfaces */
+  --nb-paper:  #FFF8E1;   /* app background (warm cream) */
+  --nb-card:   #FFFFFF;
+  --nb-muted:  #5A5A5A;   /* secondary text — passes AA on paper/white; NEVER lighter */
+
+  /* geometry */
+  --nb-border: 3px;
+  --nb-radius: 8px;       /* "squared or lightly rounded" */
+  --nb-shadow: 6px 6px 0 var(--nb-ink);
+  --nb-shadow-sm: 3px 3px 0 var(--nb-ink);
+  --nb-shadow-press: 0 0 0 var(--nb-ink);
+
+  /* typography */
+  --font-display: "Archivo Black", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+@theme {
+  --color-nb-yellow: var(--nb-yellow);
+  --color-nb-pink: var(--nb-pink);
+  --color-nb-blue: var(--nb-blue);
+  --color-nb-green: var(--nb-green);
+  --color-nb-ink: var(--nb-ink);
+  --color-nb-paper: var(--nb-paper);
+  --color-nb-card: var(--nb-card);
+  --color-nb-muted: var(--nb-muted);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  --shadow-nb: 6px 6px 0 var(--nb-ink);
+  --shadow-nb-sm: 3px 3px 0 var(--nb-ink);
+  --shadow-nb-press: 0 0 0 var(--nb-ink);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hatch patterns for skeletons and uncertainty visualization (no gradient blur) */
+.pattern-hatch-solid {
+  background-color: var(--nb-card);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--nb-ink) 0,
+    var(--nb-ink) 2px,
+    transparent 0,
+    transparent 8px
+  );
+}
+
+.pattern-hatch-pink {
+  background-color: #FFF0F5;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--nb-pink) 0,
+    var(--nb-pink) 2px,
+    transparent 0,
+    transparent 8px
+  );
+}
+
+.pattern-hatch-yellow {
+  background-color: #FFFDE7;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--nb-ink) 0,
+    var(--nb-ink) 2px,
+    transparent 0,
+    transparent 8px
+  );
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
