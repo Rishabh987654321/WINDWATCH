@@ -6,7 +6,6 @@
 
 A decision-support web app for a UK energy utility's **day-ahead power buying desk** — it shows the wind-generation forecast **as it stood when the buyer had to decide**, and puts **hard numbers on how wrong those forecasts tend to be**.
 
-[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![React](https://img.shields.io/badge/react-19-61dafb)
 ![License](https://img.shields.io/badge/license-MIT-black)
@@ -278,34 +277,14 @@ Limitations to keep in mind: one month of data limits tail estimates; national a
 ## Deployment
 
 - **Local / CI parity:** Docker (`backend` = FastAPI on `python:3.12-slim`, non-root, healthcheck; `frontend` = nginx serving the built SPA and proxying `/api/`).
-- **Public demo:** Vercel, single project — static frontend plus FastAPI as a serverless function under `/api`, snapshot bundled with the function. Step-by-step instructions and gotchas (bundle size, cold start, read-only filesystem) are in [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+- **Public demo:** Vercel, single project — static frontend plus FastAPI as a serverless function under `/api`, snapshot bundled with the function.
 - **Smoke test any deployment:** `python scripts/smoke_deployed.py https://<your-url>` checks health, metadata, the January headline numbers and SPA deep links.
 
 Live app: `<LIVE_URL>`
 
-## Documentation index
-
-| Doc                                                                                                   | Read it for                                                               |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [`docs/DOMAIN.md`](docs/DOMAIN.md)                                                                    | Definitions, selection policies, metrics, assumptions log                 |
-| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)                                                        | Stack, layout, layering rules                                             |
-| [`docs/SYSTEM_DESIGN.md`](docs/SYSTEM_DESIGN.md)                                                      | Data model, algorithms, performance budgets, failure modes, scaling story |
-| [`docs/API.md`](docs/API.md)                                                                          | REST contract                                                             |
-| [`docs/DESIGN.md`](docs/DESIGN.md)                                                                    | Neo-Brutalist design system and page specs                                |
-| [`docs/TESTING.md`](docs/TESTING.md)                                                                  | Test strategy and review checklist                                        |
-| [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)                                                            | Docker and Vercel                                                         |
-| [`docs/DECISIONS.md`](docs/DECISIONS.md)                                                              | Architecture decision records (ADR-001 … ADR-015)                         |
-| [`docs/CALIBRATION.md`](docs/CALIBRATION.md) · [`docs/SNAPSHOT_PROFILE.md`](docs/SNAPSHOT_PROFILE.md) | Empirical calibration and data profile                                    |
-| [`docs/PHASES.md`](docs/PHASES.md)                                                                    | Build plan and time ledger                                                |
-| [`AGENTS.md`](AGENTS.md)                                                                              | Working rules for AI coding agents                                        |
-
 ## AI usage disclosure
 
 As required by the brief: this project was built **with AI assistance**. **Antigravity** (agentic coding IDE) and **Claude** (Anthropic) were used for planning documents, architecture, scaffolding and code generation. Domain definitions, analytical choices and assumptions were specified up front in `docs/`; generated code was checked against them with tests (including leakage, cross-validation and mutation checks), reviewed, and is understood by the author. Where AI-reported numbers disagreed with the data or each other, they were re-derived and corrected (see the commit history and `docs/DECISIONS.md`).
-
-## Time spent
-
-Approximately **`<N>` hours** against the 16-hour budget; per-phase ledger in [`docs/PHASES.md`](docs/PHASES.md).
 
 ## License
 
