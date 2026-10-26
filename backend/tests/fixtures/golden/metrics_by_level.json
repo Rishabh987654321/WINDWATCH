@@ -1,0 +1,37 @@
+{
+  "basis": "forecast",
+  "points": [
+    {
+      "bias_mw": 1356.6,
+      "bin": 1,
+      "level_from_mw": 15600.0,
+      "level_to_mw": 17629.0,
+      "mae_mw": 1356.6,
+      "n": 18
+    },
+    {
+      "bias_mw": 3169.8,
+      "bin": 2,
+      "level_from_mw": 17693.0,
+      "level_to_mw": 18700.0,
+      "mae_mw": 3169.8,
+      "n": 18
+    },
+    {
+      "bias_mw": 3650.9,
+      "bin": 3,
+      "level_from_mw": 18711.0,
+      "level_to_mw": 19340.0,
+      "mae_mw": 3650.9,
+      "n": 18
+    },
+    {
+      "bias_mw": 4345.6,
+      "bin": 4,
+      "level_from_mw": 19395.0,
+      "level_to_mw": 20028.0,
+      "mae_mw": 4345.6,
+      "n": 18
+    }
+  ]
+}

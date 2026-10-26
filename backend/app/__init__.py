@@ -1,0 +1,1 @@
+"""WindWatch backend application package."""
