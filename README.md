@@ -9,6 +9,7 @@ A decision-support web app for a UK energy utility's **day-ahead power buying de
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![React](https://img.shields.io/badge/react-19-61dafb)
 ![License](https://img.shields.io/badge/license-MIT-black)
+[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
 
 **🔗 Live app:** `<LIVE_URL>` · **🎥 Demo video:** `<VIDEO_URL>`
 
@@ -30,10 +31,8 @@ A decision-support web app for a UK energy utility's **day-ahead power buying de
 10. [Data & reproducibility](#data--reproducibility)
 11. [Assumptions & limitations](#assumptions--limitations)
 12. [Deployment](#deployment)
-13. [Documentation index](#documentation-index)
-14. [AI usage disclosure](#ai-usage-disclosure)
-15. [Time spent](#time-spent)
-16. [License](#license)
+13. [AI usage disclosure](#ai-usage-disclosure)
+14. [License](#license)
 
 ---
 
