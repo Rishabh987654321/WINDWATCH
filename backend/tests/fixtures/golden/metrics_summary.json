@@ -1,0 +1,26 @@
+{
+  "bias_mw": 3130.7083333333335,
+  "corr": 0.016908214938579393,
+  "coverage": {
+    "n_expected": 72,
+    "n_matched": 72,
+    "n_missing_actual": 0,
+    "n_missing_forecast": 0
+  },
+  "mae_mw": 3130.7083333333335,
+  "max_over_forecast": {
+    "mw": 5656.0,
+    "ts": "2026-01-01T00:00:00Z"
+  },
+  "max_under_forecast": {
+    "mw": 282.0,
+    "ts": "2026-01-03T23:00:00Z"
+  },
+  "median_abs_error_mw": 3415.5,
+  "n": 72,
+  "nmae_pct": 20.497965307931892,
+  "over_forecast_rate": 1.0,
+  "p90_abs_error_mw": 4414.2,
+  "p95_abs_error_mw": 4830.15,
+  "rmse_mw": 3376.473968259393
+}

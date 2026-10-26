@@ -1,0 +1,111 @@
+{
+  "actual_mw": 15023.0,
+  "forecasts": [
+    {
+      "forecast_mw": 17474.0,
+      "horizon_h": 57.5,
+      "published_at": "2025-12-31T02:30:00Z"
+    },
+    {
+      "forecast_mw": 17573.0,
+      "horizon_h": 55.5,
+      "published_at": "2025-12-31T04:30:00Z"
+    },
+    {
+      "forecast_mw": 17803.0,
+      "horizon_h": 52.5,
+      "published_at": "2025-12-31T07:30:00Z"
+    },
+    {
+      "forecast_mw": 17667.0,
+      "horizon_h": 50.5,
+      "published_at": "2025-12-31T09:30:00Z"
+    },
+    {
+      "forecast_mw": 17390.0,
+      "horizon_h": 48.5,
+      "published_at": "2025-12-31T11:30:00Z"
+    },
+    {
+      "forecast_mw": 16724.0,
+      "horizon_h": 44.5,
+      "published_at": "2025-12-31T15:30:00Z"
+    },
+    {
+      "forecast_mw": 17023.0,
+      "horizon_h": 41.5,
+      "published_at": "2025-12-31T18:30:00Z"
+    },
+    {
+      "forecast_mw": 17634.0,
+      "horizon_h": 37.5,
+      "published_at": "2025-12-31T22:30:00Z"
+    },
+    {
+      "forecast_mw": 17498.0,
+      "horizon_h": 33.5,
+      "published_at": "2026-01-01T02:30:00Z"
+    },
+    {
+      "forecast_mw": 17558.0,
+      "horizon_h": 31.5,
+      "published_at": "2026-01-01T04:30:00Z"
+    },
+    {
+      "forecast_mw": 17541.0,
+      "horizon_h": 28.5,
+      "published_at": "2026-01-01T07:30:00Z"
+    },
+    {
+      "forecast_mw": 17739.0,
+      "horizon_h": 26.5,
+      "published_at": "2026-01-01T09:30:00Z"
+    },
+    {
+      "forecast_mw": 17893.0,
+      "horizon_h": 24.5,
+      "published_at": "2026-01-01T11:30:00Z"
+    },
+    {
+      "forecast_mw": 18144.0,
+      "horizon_h": 20.5,
+      "published_at": "2026-01-01T15:30:00Z"
+    },
+    {
+      "forecast_mw": 18218.0,
+      "horizon_h": 17.5,
+      "published_at": "2026-01-01T18:30:00Z"
+    },
+    {
+      "forecast_mw": 18110.0,
+      "horizon_h": 13.5,
+      "published_at": "2026-01-01T22:30:00Z"
+    },
+    {
+      "forecast_mw": 17866.0,
+      "horizon_h": 9.5,
+      "published_at": "2026-01-02T02:30:00Z"
+    },
+    {
+      "forecast_mw": 17481.0,
+      "horizon_h": 7.5,
+      "published_at": "2026-01-02T04:30:00Z"
+    },
+    {
+      "forecast_mw": 15859.0,
+      "horizon_h": 4.5,
+      "published_at": "2026-01-02T07:30:00Z"
+    },
+    {
+      "forecast_mw": 16052.0,
+      "horizon_h": 2.5,
+      "published_at": "2026-01-02T09:30:00Z"
+    },
+    {
+      "forecast_mw": 15922.0,
+      "horizon_h": 0.5,
+      "published_at": "2026-01-02T11:30:00Z"
+    }
+  ],
+  "target": "2026-01-02T12:00:00Z"
+}
