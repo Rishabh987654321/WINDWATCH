@@ -31,16 +31,28 @@ class Settings(BaseSettings):
     risk_window_days_default: int = 28
     risk_min_days: int = 7
 
-    cors_origins: list[str] = Field(default_factory=list)
+    cors_origins: list[str] | str = Field(default_factory=list)
     admin_token: str = ""
 
     @field_validator("cors_origins", mode="before")
     @classmethod
     def parse_cors_origins(cls, v: object) -> list[str]:
+        if not v:
+            return []
         if isinstance(v, str):
-            if not v.strip():
+            clean = v.strip()
+            if not clean:
                 return []
-            return [origin.strip() for origin in v.split(",") if origin.strip()]
+            if clean.startswith("[") and clean.endswith("]"):
+                import json
+
+                try:
+                    loaded = json.loads(clean)
+                    if isinstance(loaded, list):
+                        return [str(origin).strip() for origin in loaded if str(origin).strip()]
+                except Exception:
+                    pass
+            return [origin.strip() for origin in clean.split(",") if origin.strip()]
         if isinstance(v, list):
             return [str(origin).strip() for origin in v if str(origin).strip()]
         return []

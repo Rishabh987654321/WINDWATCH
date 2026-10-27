@@ -44,9 +44,10 @@ app.add_middleware(RequestLoggingMiddleware)
 
 # Enable CORS only if configured
 if settings.cors_origins:
+    origins = list(settings.cors_origins) if isinstance(settings.cors_origins, list) else [settings.cors_origins]
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=settings.cors_origins,
+        allow_origins=origins,
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
