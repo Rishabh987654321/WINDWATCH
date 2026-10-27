@@ -10,6 +10,7 @@ Examples:
 """
 
 import sys
+# pyrefly: ignore[missing-import]
 import httpx
 
 if hasattr(sys.stdout, "reconfigure"):

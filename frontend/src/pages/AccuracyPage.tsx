@@ -102,8 +102,9 @@ const AccuracyPage: React.FC = () => {
           return;
         }
       }
-      if (p.dataIndex != null && horizonPoints[p.dataIndex]) {
-        const clickedH = horizonPoints[p.dataIndex].horizon_hours;
+      const pt = p.dataIndex != null ? horizonPoints[p.dataIndex] : undefined;
+      if (pt) {
+        const clickedH = pt.horizon_hours;
         setFilters({ policy: "lead_time", horizonHours: clickedH });
       }
     });
