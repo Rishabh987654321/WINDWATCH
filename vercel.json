@@ -5,7 +5,7 @@
   "regions": ["lhr1"],
   "functions": {
     "api/index.py": {
-      "includeFiles": "backend/data/snapshot/**",
+      "includeFiles": "backend/**",
       "maxDuration": 30
     }
   },
